@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TubeRooK</string>
+    <string name="mode_button">VIDEO</string>
+    <string name="sleep_button">SLEEP</string>
+    <string name="keyword_edittext_hint">Powered By Kotlin</string>
+    <string name="sign_button">◎</string>
+</resources>

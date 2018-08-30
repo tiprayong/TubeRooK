@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/setSleepBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_recent_history"
+            android:text="@string/sign_button"
+            android:background="@drawable/button_shape"
+            />
+
+        <EditText
+            android:id="@+id/keywordET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:hint="@string/keyword_edittext_hint"
+            />
+
+
+        <Button
+            android:id="@+id/modeBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mode_button"
+            android:background="@drawable/button_shape"
+            />
+
+
+        <Button
+            android:id="@+id/voiceBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_btn_speak_now"
+            android:text="@string/sign_button"
+            android:background="@drawable/button_shape"
+            />
+
+        <Button
+            android:id="@+id/searchBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:text="@string/sign_button"
+            android:background="@drawable/button_shape"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/favPlaylistBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/playlist"
+            android:gravity="start"
+            android:background="@drawable/button_shape"
+            />
+
+
+        <Button
+            android:id="@+id/favVideoBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/video"
+            android:gravity="start"
+            android:background="@drawable/button_shape"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/statusTV"
+        android:background="@color/select"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        />
+    <ListView
+        android:id="@+id/resultLV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
